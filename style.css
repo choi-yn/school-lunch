@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    min-height: 100vh;
+    background-color: #e6f3ff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.search-section {
+    margin-bottom: 2rem;
+}
+
+.school-search {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.school-search input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.school-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 2px solid #fbcfe8;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.school-item {
+    padding: 1rem;
+    border-bottom: 1px solid #fbcfe8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.school-item:hover {
+    background-color: #fdf2f8;
+    transform: translateX(5px);
+}
+
+.school-item:last-child {
+    border-bottom: none;
+}
+
+/* 스크롤바 스타일링 */
+.school-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.school-list::-webkit-scrollbar-track {
+    background: #fdf2f8;
+    border-radius: 4px;
+}
+
+.school-list::-webkit-scrollbar-thumb {
+    background: #fbcfe8;
+    border-radius: 4px;
+}
+
+.school-list::-webkit-scrollbar-thumb:hover {
+    background: #f9a8d4;
+}
+
+/* 날짜 입력 필드 스타일링 */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+/* 애니메이션 효과 */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+button:hover {
+    animation: bounce 0.5s ease infinite;
+}
+
+.date-picker {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.meal-info {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+#selectedDate {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#mealContent {
+    white-space: pre-line;
+    line-height: 1.8;
+}
+
+.font-comic {
+    font-family: 'Comic Neue', cursive;
+}
+
+.font-cute {
+    font-family: 'Nanum Pen Script', cursive !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+body, .font-cute, button, input, .school-item, #selectedDate, #mealContent {
+    font-family: 'Noto Sans KR', Arial, sans-serif !important;
+    font-size: 1rem !important;
+}
+
+h1, .main-title {
+    font-family: 'Noto Sans KR', Arial, sans-serif !important;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+    color: navy !important;
+    line-height: 1.2;
+}
+
+.logo-big {
+    height: 10rem !important;
+    width: 10rem !important;
+    min-width: 120px !important;
+}
